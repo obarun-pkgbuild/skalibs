@@ -1,17 +1,18 @@
 # Maintainer: Eric Vidal <eric@obarun.org>
 
 pkgname=skalibs
-pkgver=2.6.0.0
+pkgver=2.6.3.1
 pkgrel=1
 pkgdesc="A general-purpose low-level C library"
 arch=(x86_64)
 url="http://www.skarnet.org/software/skalibs/"
 license=('ISC')
-groups=(s6-suite)
+groups=('base' 's6-suite')
 makedepends=('git')
 conflicts=('skalibs-git')
-source=("$pkgname::git+git://git.skarnet.org/skalibs#commit=$_commit")
-_commit=72de81e772b1c3a350c8265752ef91bab52741d1 # tag 2.6.0.0
+source=("$pkgname::git+git://git.skarnet.org/skalibs#tag=v${pkgver}")
+#source=("$pkgname::git+git://git.skarnet.org/skalibs#commit=$_commit")
+#_commit=483de1edb380b33c6adf56c8f47a701a0e268f07 # tag 2.6.2.0
 md5sums=('SKIP')
 validpgpkeys=('6DD4217456569BA711566AC7F06E8FDE7B45DAAC') # Eric Vidal
 
@@ -33,3 +34,4 @@ package() {
   
   install -Dm644 COPYING $pkgdir/usr/share/licenses/$pkgname/COPYING
 } 
+#74e6ee2aad79665806facb88fca3185cb664582c
