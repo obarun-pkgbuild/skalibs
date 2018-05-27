@@ -1,7 +1,7 @@
 # Maintainer: Eric Vidal <eric@obarun.org>
 
 pkgname=skalibs
-pkgver=2.6.3.1
+pkgver=2.6.4.0
 pkgrel=1
 pkgdesc="A general-purpose low-level C library"
 arch=(x86_64)
@@ -34,4 +34,4 @@ package() {
   
   install -Dm644 COPYING $pkgdir/usr/share/licenses/$pkgname/COPYING
 } 
-#74e6ee2aad79665806facb88fca3185cb664582c
+
